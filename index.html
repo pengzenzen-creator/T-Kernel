@@ -68,9 +68,27 @@ body {
 .fade-in { opacity:0; transform:translateY(14px); animation:fadeIn .5s ease forwards; }
 @keyframes fadeIn { to { opacity:1; transform:translateY(0); } }
 @media (max-width:700px) {
-  .chart-grid { grid-template-columns:1fr; }
-  .grid-head,.row { grid-template-columns:1fr; }
-  .row .tag { justify-self:start; }
+  body { padding:20px 10px 40px; }
+  .container { padding:22px 14px; border-radius:18px; }
+  .header h1 { font-size:24px; letter-spacing:2px; }
+  .header p { font-size:13px; }
+  .perf { padding:16px 12px; }
+  .chart-grid { grid-template-columns:1fr; gap:10px; }
+  .chart { padding:12px; }
+  .chart-title { font-size:13px; }
+  .pct-badge { float:right; font-size:11px; padding:3px 10px; }
+  .bar-row { gap:6px; margin-bottom:8px; }
+  .bar-label { width:46px; font-size:11px; }
+  .bar-track { height:22px; border-radius:11px; }
+  .bar-fill { font-size:10px; }
+  .grid-head { display:none; }
+  .section { font-size:14px; padding:12px 14px; margin-top:14px; }
+  .row { grid-template-columns:1fr; gap:5px; padding:14px; }
+  .row .name { font-size:14px; }
+  .row .desc { font-size:13px; }
+  .row .tag { justify-self:start; margin-top:2px; }
+  .row:hover { background:rgba(255,228,239,.6); transform:none; }
+  .footer { font-size:13px; }
 }
 </style>
 </head>
